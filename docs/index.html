@@ -22,7 +22,7 @@
 window.FlexDashboardComponents = [];
 </script>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -39,6 +39,11 @@ window.FlexDashboardComponents = [];
 <link href="site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.14/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <style type="text/css">
 
 /*
@@ -2662,14 +2667,14 @@ window.FlexDashboardComponents.push({
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<span class="value-output" data-caption="Registrasi" data-icon="fas fa-thumbs-up" data-color="green">0 </span>
+<span class="value-output" data-caption="Registrasi" data-icon="fas fa-thumbs-up" data-color="green">73 </span>
 </div>
 <div id="belum" class="section level3 value-box">
 <h3>belum</h3>
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<span class="value-output" data-caption="Tidak Registrasi" data-icon="fas fa-file-upload" data-color="brown">2 778 </span>
+<span class="value-output" data-caption="Tidak Registrasi" data-icon="fas fa-file-upload" data-color="brown">2 705 </span>
 </div>
 </div>
 <div id="row-2" class="section level2">
@@ -2680,8 +2685,8 @@ window.FlexDashboardComponents.push({
 
 </div>
 <div align="center">
-<div id="htmlwidget-82acc93ac2c47bb1bc19" style="width:100%;height:400px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-82acc93ac2c47bb1bc19">{"x":{"visdat":{"3efc395957d6":["function () ","plotlyVisDat"]},"cur_data":"3efc395957d6","attrs":{"3efc395957d6":{"x":{},"y":{},"name":"Laki-Laki","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"3efc395957d6.1":{"x":{},"y":{},"name":"Perempuan","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":" "},"barmode":"group","xaxis":{"domain":[0,1],"automargin":true,"title":"Fakultas","type":"category","categoryorder":"array","categoryarray":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[119,248,311,149,130,100,28],"name":"Laki-Laki","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[121,741,121,283,212,164,51],"name":"Perempuan","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-95c765338e7444392c8f" style="width:100%;height:400px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-95c765338e7444392c8f">{"x":{"visdat":{"ef4a054c19":["function () ","plotlyVisDat"]},"cur_data":"ef4a054c19","attrs":{"ef4a054c19":{"x":{},"y":{},"name":"Laki-Laki","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"ef4a054c19.1":{"x":{},"y":{},"name":"Perempuan","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":" "},"barmode":"group","xaxis":{"domain":[0,1],"automargin":true,"title":"Fakultas","type":"category","categoryorder":"array","categoryarray":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[119,248,311,149,130,100,28],"name":"Laki-Laki","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[121,741,121,283,212,164,51],"name":"Perempuan","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="sebaran-camaba-di-tiap-fakultas-1" class="section level3">
@@ -2842,8 +2847,8 @@ JML
 
 </div>
 <div align="center">
-<div id="htmlwidget-fa61be78f102fd6c4d67" style="width:100%;height:400px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fa61be78f102fd6c4d67">{"x":{"visdat":{"3efc28387ea1":["function () ","plotlyVisDat"]},"cur_data":"3efc28387ea1","attrs":{"3efc28387ea1":{"labels":["NEGERI","SWASTA"],"values":[2363,415],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["NEGERI","SWASTA"],"values":[2363,415],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-41cee2e22fbe447cbb17" style="width:100%;height:400px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-41cee2e22fbe447cbb17">{"x":{"visdat":{"ef47f6033ab":["function () ","plotlyVisDat"]},"cur_data":"ef47f6033ab","attrs":{"ef47f6033ab":{"labels":["NEGERI","SWASTA"],"values":[2363,415],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["NEGERI","SWASTA"],"values":[2363,415],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="camaba-berdasarkan-jenis-sekolah-asal" class="section level3">
@@ -2852,8 +2857,8 @@ JML
 
 </div>
 <div align="center">
-<div id="htmlwidget-851381a7627098022b48" style="width:100%;height:400px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-851381a7627098022b48">{"x":{"visdat":{"3efc133327f":["function () ","plotlyVisDat"]},"cur_data":"3efc133327f","attrs":{"3efc133327f":{"labels":["MA","PKBM","SMA","SMK"],"values":[315,7,2096,360],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["MA","PKBM","SMA","SMK"],"values":[315,7,2096,360],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6ba95bc013e26f40cb70" style="width:100%;height:400px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6ba95bc013e26f40cb70">{"x":{"visdat":{"ef44a637a69":["function () ","plotlyVisDat"]},"cur_data":"ef44a637a69","attrs":{"ef44a637a69":{"labels":["MA","PKBM","SMA","SMK"],"values":[315,7,2096,360],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["MA","PKBM","SMA","SMK"],"values":[315,7,2096,360],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -3395,6 +3400,811 @@ JML
 </tbody>
 </table>
 </div>
+</div>
+</div>
+<div id="progres-registrasi" class="section level1">
+<h1>Progres Registrasi</h1>
+<div id="row-5" class="section level2">
+<h2>row</h2>
+<div id="progres-registrasi-di-setiap-fakultas" class="section level3">
+<h3><strong>Progres registrasi di setiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div id="htmlwidget-c621b6a6ae4224892ba6" style="width:576px;height:460.8px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c621b6a6ae4224892ba6">{"x":{"visdat":{"ef42fec457a":["function () ","plotlyVisDat"]},"cur_data":"ef42fec457a","attrs":{"ef42fec457a":{"x":{},"y":{},"name":"Total","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"ef42fec457a.1":{"x":{},"y":{},"name":"registrasi","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"","yaxis":{"domain":[0,1],"automargin":true,"title":""},"xaxis":{"domain":[0,1],"automargin":true,"title":"Fakultas","type":"category","categoryorder":"array","categoryarray":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"]},"hovermode":"compare","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[240,989,432,432,342,264,79],"name":"Total","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[7,32,13,9,8,1,3],"name":"registrasi","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="progres-registrasi-di-setiap-fakultas-1" class="section level3">
+<h3><strong>Progres registrasi di setiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="border-bottom:hidden" colspan="2">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Registrasi
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Fakultas
+</th>
+<th style="text-align:right;">
+Lulus
+</th>
+<th style="text-align:right;">
+Ya
+</th>
+<th style="text-align:right;">
+Tidak
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Hukum
+</td>
+<td style="text-align:right;">
+240
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+233
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FKIP
+</td>
+<td style="text-align:right;">
+989
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+957
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Teknik
+</td>
+<td style="text-align:right;">
+432
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+419
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pertanian
+</td>
+<td style="text-align:right;">
+432
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+423
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FEB
+</td>
+<td style="text-align:right;">
+342
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+334
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FISIP
+</td>
+<td style="text-align:right;">
+264
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+263
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kedokteran
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+76
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:right;">
+2778
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+2705
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="row-6" class="section level2">
+<h2>row</h2>
+<div id="progres-registrasi-di-setiap-program-studi" class="section level3">
+<h3>Progres registrasi di setiap Program Studi</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="border-bottom:hidden" colspan="2">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Registrasi
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Fakultas/Program Studi
+</th>
+<th style="text-align:right;">
+Lulus
+</th>
+<th style="text-align:right;">
+Ya
+</th>
+<th style="text-align:right;">
+Tidak
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="1">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Hukum</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+HUKUM
+</td>
+<td style="text-align:right;">
+240
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+233
+</td>
+</tr>
+<tr grouplength="18">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Keguruan dan Ilmu Pendidikan</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+BIMBINGAN DAN KONSELING
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+46
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BAHASA INDONESIA
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+71
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BAHASA INGGRIS
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+67
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BIOLOGI
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+66
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN FISIKA
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+47
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN GURU SEKOLAH DASAR
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+69
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN IPA
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN KHUSUS
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN KIMIA
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+47
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN MATEMATIKA
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+72
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN NON FORMAL
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+70
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+44
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SEJARAH
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SENI PERTUNJUKAN
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+43
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SOSIOLOGI
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+47
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+PENDIDIKAN VOKASIONAL TEKNIK MESIN
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+28
+</td>
+</tr>
+<tr grouplength="6">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Teknik</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK ELEKTRO
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+70
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK INDUSTRI
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+72
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK KIMIA
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+69
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK MESIN
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+67
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK METALURGI
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+70
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNIK SIPIL
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+71
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Pertanian</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+AGRIBISNIS
+</td>
+<td style="text-align:right;">
+144
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+139
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+AGROEKOTEKNOLOGI
+</td>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+119
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+ILMU PERIKANAN
+</td>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+93
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+TEKNOLOGI PANGAN
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+72
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Ekonomi dan Bisnis</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+AKUNTANSI
+</td>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+104
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+EKONOMI PEMBANGUNAN
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+70
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+EKONOMI SYARIAH
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+54
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+MANAJEMEN
+</td>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+106
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Ilmu Sosial dan Ilmu Politik</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+ADMINISTRASI PUBLIK
+</td>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+95
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+ILMU KOMUNIKASI
+</td>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+120
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+ILMU PEMERINTAHAN
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="4" style="background-color: #666; color: #fff;">
+<strong>Kedokteran</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+GIZI
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+24
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+ILMU KEOLAHRAGAAN
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+23
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+KEDOKTERAN
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+29
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:right;">
+2778
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+2705
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="camaba-registrasi" class="section level1">
+<h1>Camaba Registrasi</h1>
+<div id="berikut-adalah-daftar-nama-calon-mahasiswa-baru-universitas-sultan-ageng-tirtayasa-yang-melakukan-registrasi-di-admisi.untirta.ac.id-sampai-dengan-19-agustus-2020-pukul-11.17.12-gunakan-search-untuk-pencarian-cepat" class="section level3">
+<h3>Berikut adalah daftar nama calon mahasiswa baru Universitas Sultan Ageng Tirtayasa yang melakukan registrasi di admisi.untirta.ac.id sampai dengan 19 Agustus 2020 pukul 11.17.12 (<strong>gunakan Search untuk pencarian cepat</strong>)</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div id="htmlwidget-5dde6264b909e84b19ab" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5dde6264b909e84b19ab">{"x":{"filter":"none","fillContainer":true,"data":[[120311090036,120312030376,120311370817,120321290381,120341590456,120312150273,120311330834,120321410574,120141130143,120311030548,120311390602,120311330239,120324190046,120341110404,120311170146,120311010648,120341031626,120324250384,120311070045,120323150241,120321310432,120311310097,120311030065,120312010506,120324390287,120311350111,120342370133,120311370926,120311310019,120311250106,120311250094,120311370376,120311190026,120311150150,120323030063,120311330066,120312010409,120311050133,120311190117,120312210570,120342510163,120311310259,120312190093,120324350176,120311130042,120311030573,120311350633,120311010300,120311310004,120311150144,120323691468,120311310229,120312210038,120321170477,120311410088,120324010074,120311370803,120311370319,120311030514,120311330291,120311330769,120311370811,120311390558,120332030474,120311050116,120311070127,120311390140,120311250143,120342250174,120311090145,120311190036,120311390391,120323610265],["RATIH OKTATIRA","AULIA PUTRI AGUSTIN","NUVI SHINTA DINI","BIMO SAPUTRO","NIZAR ALI ISNAINI","MUHAMMAD FADHAL MAULANA","Alya Indah Gayatri","RESWARA FAZA ABHINAYA","RAHMAT FAUZAN","Gabriel Jonathan Candrika Sola Gracia","FAATIHAH NASYWAA HANIFAH","RIDHO AGUNG JAYANTO","Julianus Dana Pranoto","RAKHA' ABIYYU TSAQIB","Putri Bahjah Salsabila","TAZKYA RIZQI RAMADHANY","RAHFIE RAMADHAN","PUGER KAVENAUGH TALAJARA","Najiatul Karimah","Genuita Indah Gunawan","Abdullah Faqih Rabbani","WIDYA AYU PRAMESTY","Faiz Addawami","MUCHAMMAD FARHAN","Rizka Nur Aisyah","Dina Apriliani","AULIA ANGGITA PUTRI","WILDA MARDIAH","Aisyah Choinun Salsabila","M. IDRIS","Rabiatun Hasna","Rena Kusniawati","Ridwan Maulana","Rosa Amelia","M. SATRIA BIMA SUCI","NUR ADDIENA KAMILA","Berliana Dian Permatasari","ARIBAH ARRASYIDAH","ROSA PITRI","MIRZA AMAR BARKAH","Radhini Salma Daimah","DEWY ARUM SHAFIRA","NADIA ARIFIN","SITI NAZWA SILSILAHASTIN","ANNISA FITRI KAMILAH","M. Galan Hidayat","ABDILAH NUR KUNCORO JATI","SALMA SYADILLA","DIVA NUR SAFITRI","Anggita Wulan Purnama","DANDI GUTAKA ASIAN LASTAMA","Noviana","SUSANTINA JUNIASTUTI","BAGUS PRASETIA","Nadia Tria Amanda","DEWI VERAWATI SIMAMORA","HANISA","Muhamad Sofian","AYU OCTAVIA","Ade Nurfauziah","FAWZIYAH IKEYASHAH MAHRANI","MAURA RIZKI ANANDA","TIARA FADIA SAVITRI","Rafi Azrilla Mumtaz","LELI RAHMAWATI","DIMAS FADHILAH","SALMA NURUL IZZAH","Ridwan Yuga Pranata","Novi Ramadani Pratiwi","PUTRI RAHMA KHALISA","Alvina Azzahra","Sikarti","Siti Lailatul Latipah"],["L","P","P","L","L","L","P","L","L","L","P","L","L","L","P","P","L","L","P","P","L","P","L","L","P","P","P","P","P","L","P","P","L","P","L","P","P","P","P","L","P","P","P","P","P","L","L","P","P","P","L","P","P","L","P","P","P","L","P","P","P","P","P","L","P","L","P","L","P","P","P","P","P"],["PENDIDIKAN BIOLOGI","MANAJEMEN","ILMU PERIKANAN","TEKNIK MESIN","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","ILMU PERIKANAN","KEDOKTERAN","KEDOKTERAN","TEKNIK METALURGI","TEKNIK MESIN","PENDIDIKAN BIOLOGI","ILMU KEOLAHRAGAAN","AGRIBISNIS","MANAJEMEN","PENDIDIKAN BAHASA INGGRIS","AGRIBISNIS","TEKNIK MESIN","HUKUM","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","AGRIBISNIS","TEKNIK KIMIA","HUKUM","PENDIDIKAN VOKASIONAL TEKNIK MESIN","ILMU PERIKANAN","TEKNIK SIPIL","PENDIDIKAN GURU SEKOLAH DASAR","ADMINISTRASI PUBLIK","PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI","BIMBINGAN DAN KONSELING","AGRIBISNIS","PENDIDIKAN NON FORMAL","PENDIDIKAN SENI PERTUNJUKAN","EKONOMI PEMBANGUNAN","PENDIDIKAN BAHASA INGGRIS","TEKNIK ELEKTRO","PENDIDIKAN BAHASA INGGRIS","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","HUKUM","PENDIDIKAN BAHASA INDONESIA","TEKNIK MESIN","TEKNIK KIMIA","AKUNTANSI","AKUNTANSI","HUKUM","PENDIDIKAN BIOLOGI","PENDIDIKAN SENI PERTUNJUKAN","PENDIDIKAN KIMIA","PENDIDIKAN BAHASA INGGRIS","PENDIDIKAN NON FORMAL","PENDIDIKAN BIOLOGI","PENDIDIKAN VOKASIONAL TEKNIK MESIN","AGROEKOTEKNOLOGI","TEKNIK ELEKTRO","TEKNIK METALURGI","AKUNTANSI","AKUNTANSI","HUKUM","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","PENDIDIKAN BIOLOGI","PENDIDIKAN VOKASIONAL TEKNIK MESIN","BIMBINGAN DAN KONSELING","AGRIBISNIS","PENDIDIKAN BAHASA INGGRIS","TEKNIK MESIN","TEKNIK KIMIA","HUKUM","PENDIDIKAN GURU SEKOLAH DASAR","PENDIDIKAN VOKASIONAL TEKNIK MESIN","PENDIDIKAN BIOLOGI","PENDIDIKAN GURU SEKOLAH DASAR","HUKUM","PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO","EKONOMI PEMBANGUNAN"]],"container":"<table class=\"display fill-container\">\n  <thead>\n    <tr>\n      <th>No Pendaftaran<\/th>\n      <th>Nama<\/th>\n      <th>Jenis Kelamin<\/th>\n      <th>Program Studi<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
