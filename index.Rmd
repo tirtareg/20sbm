@@ -117,7 +117,7 @@ valueBox(
 ```{r}
 valueBox(
   value = paste(format(nrow(db)-sudah, big.mark = " "), "", sep = " "),
-  caption = "Tidak Registrasi",
+  caption = "Belum Registrasi",
   icon = "fas fa-file-upload",
   color = "brown"
 )
