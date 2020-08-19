@@ -142,9 +142,9 @@ data$Fakultas <- c("Hukum", "FKIP", "Teknik", "Pertanian", "FEB", "FISIP", "Kedo
 ### agar sesuai urutan dibuat faktor dengan level yang berurutan
 data$Fakultas <- factor(data$Fakultas, levels = data[["Fakultas"]])
 
-div(plot_ly(data, x = ~Fakultas, y = ~`Laki-Laki`, type = 'bar', name = "Laki-Laki") %>% 
+plot_ly(data, x = ~Fakultas, y = ~`Laki-Laki`, type = 'bar', name = "Laki-Laki") %>% 
   add_trace(y = ~Perempuan, name = "Perempuan") %>%
-  layout(yaxis = list(title = ' '), barmode = 'group'), align = "center")
+  layout(yaxis = list(title = ' '), barmode = 'group')
 ```
 
 ### **Sebaran camaba di tiap fakultas**
