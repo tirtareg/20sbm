@@ -273,7 +273,7 @@ plot_ly(data, x = ~fakultas, y = ~lulus, type = "bar", name = "Total") %>%
 ### **Progres registrasi di setiap fakultas**
 
 ```{r}
-names(data) <- c("Fakultas", "Lulus", "Sudah", "Belum")
+names(data) <- c("Fakultas", "Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)")
 data <- adorn_totals(data, where = "row", name = "Total")
 kable(data) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
