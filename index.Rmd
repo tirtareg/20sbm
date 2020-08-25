@@ -18,9 +18,9 @@ library(readxl)
 
 db <- read_excel("sbmptn.xlsx", sheet = "Sheet1")
 
-#data <- db %>%
-#  group_by(id_prodi) %>%
-#  summarize(minat = n())
+data <- db %>%
+  group_by(id_prodi) %>%
+  summarize(peminat = max(peminat))
 ```
 
 Ringkasan
@@ -34,8 +34,7 @@ Row
 ```{r}
 
 valueBox(
-  #value = paste(format(nrow(db), big.mark = " "), "", sep = " "),
-  value = "",
+  value = paste(format(sum(data$peminat), big.mark = " "), "", sep = " "),
   caption = "Pendaftar di Untirta",
   icon = "fas fa-clipboard-check",
   color = "black"
