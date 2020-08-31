@@ -248,14 +248,16 @@ data <- db %>%
   summarize(peminat = max(peminat),
             lulus = n(),
             sudah = sum(na.omit(registrasi == "registrasi")),
-            belum = lulus - sudah)
+            belum = lulus - sudah,
+            diterima = sum(na.omit(diterima == "diterima")))
 
 data <- data %>%
   group_by(fakultas) %>%
   summarize(peminat = sum(peminat),
             lulus = sum(lulus),
             sudah = sum(sudah),
-            belum = sum(belum))
+            belum = sum(belum),
+            diterima = sum(diterima))
 
 data$fakultas <- c("Hukum", "FKIP", "Teknik", "Pertanian",
                    "FEB", "FISIP", "Kedokteran")
@@ -263,6 +265,7 @@ data$fakultas  <- factor(data$fakultas, levels = data[["fakultas"]])
 
 plot_ly(data, x = ~fakultas, y = ~lulus, type = "bar", name = "Total") %>%
   add_trace(y = ~sudah, name = "registrasi") %>%
+  add_trace(y = ~diterima, name = "diterima") %>%
   layout(
     title = "",
     yaxis = list(title = ""),
@@ -277,11 +280,12 @@ plot_ly(data, x = ~fakultas, y = ~lulus, type = "bar", name = "Total") %>%
 data <- adorn_totals(data, where = "row", name = "Total")
 data$pers_sudah <- round(data$sudah / data$lulus * 100, 0)
 data$pers_belum <- round(data$belum / data$lulus * 100, 0)
-names(data) <- c("Fakultas", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)")
+data <- data[,c(1:5,7:8,6)]
+names(data) <- c("Fakultas", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)", "Diterima")
 kable(data) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
-  add_header_above(c(" " = 3, "Registrasi" = 4))
+  add_header_above(c(" " = 3, "Registrasi" = 4," " = 1))
 
 ```
 
@@ -296,18 +300,21 @@ data <- db %>%
   summarize(peminat = max(peminat),
             lulus = n(),
             sudah = sum(na.omit(registrasi == "registrasi")),
-            belum = lulus - sudah)
+            belum = lulus - sudah,
+            diterima = sum(na.omit(diterima == "diterima")))
 data <- data[, -1]
 
 data <- adorn_totals(data,where = "row", name = "Total")
 data$pers_sudah <- round(data$sudah / data$lulus * 100, 0)
 data$pers_belum <- round(data$belum / data$lulus * 100, 0)
 
-names(data) <- c("Fakultas/Program Studi", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)")
+data <- data[,c(1:5,7, 8, 6)]
+
+names(data) <- c("Fakultas/Program Studi", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)", "Diterima")
 kable(data, row.names = F) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
-  add_header_above(c(" " = 3, "Registrasi" = 4)) %>%
+  add_header_above(c(" " = 3, "Registrasi" = 4, " " = 1)) %>%
   pack_rows("Hukum", 1, 1, label_row_css = "background-color: #666; color: #fff;") %>%
   pack_rows("Keguruan dan Ilmu Pendidikan", 2, 19, label_row_css = "background-color: #666; color: #fff;") %>%
   pack_rows("Teknik", 20, 25, label_row_css = "background-color: #666; color: #fff;") %>%
@@ -329,6 +336,23 @@ Camaba Registrasi
 # format waktu
 data <- db %>%
   filter(registrasi == "registrasi") %>%
+  select(no_peserta, nama_siswa, jk, program_studi)
+names(data) <- c("No Pendaftaran", "Nama", "Jenis Kelamin", "Program Studi")
+DT::datatable(data,
+              rownames = F)#,
+              #filter = "top")
+```
+
+Mahasiswa Baru
+===
+
+### Berikut adalah daftar nama mahasiswa baru (**sudah mendapatkan NIM**) Universitas Sultan Ageng Tirtayasa jalur SBMPTN 2020 sampai dengan `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%H:%M")`. (**gunakan Search untuk pencarian cepat**)
+
+```{r}
+# `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%X")`
+# format waktu
+data <- db %>%
+  filter(diterima == "diterima") %>%
   select(no_peserta, nama_siswa, jk, program_studi)
 names(data) <- c("No Pendaftaran", "Nama", "Jenis Kelamin", "Program Studi")
 DT::datatable(data,
