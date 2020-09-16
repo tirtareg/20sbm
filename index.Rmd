@@ -108,7 +108,7 @@ valueBox(
   value = paste(format(sudah, big.mark = " "), " (", 
                 round(sudah/nrow(db)*100, 0), "%)",
                 sep = ""),
-  caption = "Sudah Registrasi",
+  caption = "Registrasi",
   icon = "fas fa-thumbs-up",
   color = "green"
 )
@@ -122,7 +122,7 @@ valueBox(
   value = paste(format(nrow(db) - sudah, big.mark = " "), " (", 
                 round((nrow(db) - sudah)/nrow(db)*100, 0), "%)",
                 sep = ""),
-  caption = "Belum Registrasi",
+  caption = "Tidak Registrasi",
   icon = "fas fa-file-upload",
   color = "brown"
 )
@@ -281,7 +281,7 @@ data <- adorn_totals(data, where = "row", name = "Total")
 data$pers_sudah <- round(data$sudah / data$lulus * 100, 0)
 data$pers_belum <- round(data$belum / data$lulus * 100, 0)
 data <- data[,c(1:5,7:8,6)]
-names(data) <- c("Fakultas", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)", "Diterima")
+names(data) <- c("Fakultas", "Peminat","Lulus", "Ya", "Tidak", "Ya (%)", "Tidak (%)", "Diterima")
 kable(data) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
@@ -310,7 +310,7 @@ data$pers_belum <- round(data$belum / data$lulus * 100, 0)
 
 data <- data[,c(1:5,7, 8, 6)]
 
-names(data) <- c("Fakultas/Program Studi", "Peminat","Lulus", "Sudah", "Belum", "Sudah (%)", "Belum (%)", "Diterima")
+names(data) <- c("Fakultas/Program Studi", "Peminat","Lulus", "Ya", "Tidak", "Ya (%)", "Tidak (%)", "Diterima")
 kable(data, row.names = F) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
@@ -346,10 +346,10 @@ DT::datatable(data,
 Mahasiswa Baru
 ===
 
-### Berikut adalah daftar nama mahasiswa baru (**sudah mendapatkan NIM**) Universitas Sultan Ageng Tirtayasa jalur SBMPTN 2020 sampai dengan `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%H:%M")`. (**gunakan Search untuk pencarian cepat**)
+### Berikut adalah daftar nama mahasiswa baru (**sudah mendapatkan NIM**) Universitas Sultan Ageng Tirtayasa jalur SBMPTN 2020 (**gunakan Search untuk pencarian cepat**)
 
 ```{r}
-# `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%X")`
+# sampai dengan `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%X")`
 # format waktu
 data <- db %>%
   filter(diterima == "diterima") %>%
