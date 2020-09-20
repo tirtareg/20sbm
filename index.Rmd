@@ -292,7 +292,7 @@ kable(data) %>%
 row
 ---
 
-### Progres registrasi di setiap Program Studi
+### **Progres registrasi di setiap Program Studi**
 
 ```{r}
 data <- db %>%
