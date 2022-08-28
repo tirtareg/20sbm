@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(downloadthis)
 Sys.setlocale("LC_TIME", "IND")
 #library(flipTime)
 #UpdateEvery(1, "hours", options = "wakeup")
@@ -163,6 +164,16 @@ kable(data) %>%
                 latex_options = "scale_down") %>%
   add_header_above(c(" " = 1, "Jenis Kelamin" = 2, " " = 1))
 
+data %>%
+  download_this(
+    output_name = "maba per fak",
+    output_extension = ".xlsx",
+    button_label = "Download data",
+    button_type = "warning",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+
 ```
 
 
@@ -213,7 +224,20 @@ kable(data) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
   add_header_above(c(" " = 1, "Jenis Kelamin" = 2, " " = 1))
+
+
+data %>%
+  download_this(
+    output_name = "camaba per prov",
+    output_extension = ".xlsx",
+    button_label = "Download data",
+    button_type = "warning",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
 ```
+
+
 
 ### **Camaba berdasarkan pendidikan orang tua**
 
@@ -232,6 +256,16 @@ kable(data) %>%
   kable_styling(bootstrap_options = "striped", full_width = F,
                 latex_options = "scale_down") %>%
   add_header_above(c(" " = 1, "Jenis Kelamin" = 2, " " = 1))
+
+data %>%
+  download_this(
+    output_name = "pend ortu",
+    output_extension = ".xlsx",
+    button_label = "Download data",
+    button_type = "warning",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
 ```
 
 Progres Registrasi
@@ -287,6 +321,15 @@ kable(data) %>%
                 latex_options = "scale_down") %>%
   add_header_above(c(" " = 3, "Registrasi" = 4," " = 1))
 
+data %>%
+  download_this(
+    output_name = "regis per fak",
+    output_extension = ".xlsx",
+    button_label = "Download data",
+    button_type = "warning",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
 ```
 
 row
@@ -323,13 +366,21 @@ kable(data, row.names = F) %>%
   pack_rows("Ilmu Sosial dan Ilmu Politik", 34, 36, label_row_css = "background-color: #666; color: #fff;") %>%
   pack_rows("Kedokteran", 37, 39, label_row_css = "background-color: #666; color: #fff;")
 
-
+data %>%
+  download_this(
+    output_name = "regis per prodi",
+    output_extension = ".xlsx",
+    button_label = "Download data",
+    button_type = "warning",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
 ```
 
 Camaba Registrasi
 ===
 
-### Berikut adalah daftar nama calon mahasiswa baru Universitas Sultan Ageng Tirtayasa yang melakukan registrasi di admisi.untirta.ac.id sampai dengan `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%X")` (**gunakan Search untuk pencarian cepat**)
+### Berikut adalah daftar nama calon mahasiswa baru Universitas Sultan Ageng Tirtayasa yang melakukan registrasi di admisi.untirta.ac.id (**gunakan Search untuk pencarian cepat**)
 
 ```{r}
 # `r format(Sys.time(), "%d %B %Y")` pukul `r format(Sys.time(), "%X")`
